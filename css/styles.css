@@ -1,0 +1,319 @@
+@font-face {
+  font-family: 'Baloo Tamma';
+  src: url('../fonts/BalooTamma-Regular.ttf');
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+html {
+  box-sizing: border-box;
+}
+
+:root {
+  --conditions-color: #faf9f8;
+  --white-color: #ffffff;
+  --black-color: #000000;
+}
+
+body {
+  color: var(--white-color);
+  background-color: var(--black-color);
+  font-family: 'Baloo Tamma';
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.hero {
+  height: 100%;
+  background-color: var(--black-color);
+  position: relative;
+}
+.text-gradient {
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #ffff0a 0%, #ff6200 161.82%),
+    linear-gradient(90deg, #ffffff 0%, #999999 100%);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn-gradient {
+  background: linear-gradient(180deg, #ffff0a 0%, #ff6200 161.82%),
+    linear-gradient(90deg, #00ff31 0%, #00991e 100%);
+  overflow: hidden;
+  transition: background 0.5s ease, color 0.3s ease, box-shadow 0.3s ease,
+    transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  color: #070145;
+}
+.main-text {
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 0.85;
+  color: var(--white-color);
+
+  top: 23.1%;
+  left: 4%;
+}
+
+.rights {
+  font-family: 'Montserrat';
+  font-size: 12%;
+  line-height: 133%;
+  position: absolute;
+  text-align: center;
+  font-weight: 500;
+  color: var(--white-color);
+  letter-spacing: -0.2px;
+
+  top: 94%;
+  left: 16%;
+}
+
+.first-paragraph {
+  font-size: 76%;
+  margin-bottom: 2%;
+}
+
+.second-paragraph {
+  text-align: center;
+  font-size: 37.5%;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.odds {
+  font-size: 323%;
+  margin-bottom: 5.6%;
+}
+.hero-button {
+  display: block;
+  cursor: pointer;
+  border: none;
+
+  text-decoration: none;
+  font-size: 50%;
+  border-radius: 500px;
+  width: 64%;
+  margin: 0 auto;
+
+  padding: 7.2% 0% 6.2% 0%;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background: linear-gradient(34deg, rgba(255, 188, 17, 1) 36%, #9241b0 108%);
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Mobile --- */
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 148px) {
+    html {
+      font-size: 18px;
+    }
+  }
+  @media screen and (min-width: 180px) {
+    html {
+      font-size: 24px;
+    }
+  }
+  @media screen and (min-width: 240px) {
+    html {
+      font-size: 30px;
+    }
+  }
+  @media screen and (min-width: 280px) {
+    html {
+      font-size: 35px;
+    }
+  }
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: 40px;
+    }
+  }
+  @media screen and (min-width: 340px) {
+    html {
+      font-size: 42px;
+    }
+  }
+  @media screen and (min-width: 360px) {
+    html {
+      font-size: 46px;
+    }
+  }
+  @media screen and (min-width: 390px) {
+    html {
+      font-size: 48px;
+    }
+  }
+  @media screen and (min-width: 400px) {
+    html {
+      font-size: 49px;
+    }
+  }
+  @media screen and (min-width: 420px) {
+    html {
+      font-size: 53px;
+    }
+  }
+  @media screen and (min-width: 440px) {
+    html {
+      font-size: 55px;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    html {
+      font-size: 60px;
+    }
+  }
+
+  .main-text {
+    width: 100%;
+    left: 0;
+    top: 10%;
+
+    text-align: center;
+  }
+
+  .first-paragraph {
+    font-size: 71%;
+  }
+
+  .second-paragraph {
+    margin-bottom: 2.2%;
+  }
+
+  .odds {
+    font-size: 306%;
+  }
+
+  .hero-button {
+    width: 89.5%;
+    margin: 0 auto;
+    font-size: 71.1%;
+  }
+
+  .rights {
+    display: none;
+  }
+
+  .bg-img {
+    display: none;
+  }
+
+  .bg-img-mob {
+    width: 100%;
+  }
+}
+
+/* --- Desctop and tablets --- */
+
+@media screen and (min-width: 481px) {
+  html {
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: 580px) {
+    html {
+      font-size: 32px;
+    }
+  }
+  @media screen and (min-width: 620px) {
+    html {
+      font-size: 35px;
+    }
+  }
+  @media screen and (min-width: 780px) {
+    html {
+      font-size: 44px;
+    }
+  }
+  @media screen and (min-width: 860px) {
+    html {
+      font-size: 48px;
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    html {
+      font-size: 56px;
+    }
+  }
+  @media screen and (min-width: 1100px) {
+    html {
+      font-size: 62px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    html {
+      font-size: 68px;
+    }
+  }
+  @media screen and (min-width: 1300px) {
+    html {
+      font-size: 73px;
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    html {
+      font-size: 79px;
+    }
+  }
+  @media screen and (min-width: 1500px) {
+    html {
+      font-size: 85px;
+    }
+  }
+  @media screen and (min-width: 1600px) {
+    html {
+      font-size: 90px;
+    }
+  }
+  @media screen and (min-width: 1700px) {
+    html {
+      font-size: 95px;
+    }
+  }
+  @media screen and (min-width: 1800px) {
+    html {
+      font-size: 100px;
+    }
+  }
+
+  .bg-img-mob {
+    display: none;
+  }
+}

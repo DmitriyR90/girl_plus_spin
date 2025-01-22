@@ -9,6 +9,7 @@
 
 html {
   box-sizing: border-box;
+  line-height: normal;
 }
 
 :root {
@@ -50,9 +51,9 @@ a {
 
 .hero {
   height: 100%;
-  background-color: var(--black-color);
   position: relative;
 }
+
 .text-gradient {
   text-transform: uppercase;
   background: linear-gradient(180deg, #ffff0a 0%, #ff6200 161.82%),
@@ -71,7 +72,7 @@ a {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   color: #070145;
 }
-.main-text {
+/* .main-text {
   position: absolute;
   text-align: center;
   text-transform: uppercase;
@@ -81,7 +82,7 @@ a {
 
   top: 23.1%;
   left: 4%;
-}
+} */
 
 .rights {
   font-family: 'Montserrat';
@@ -97,23 +98,23 @@ a {
   left: 16%;
 }
 
-.first-paragraph {
+/* .first-paragraph {
   font-size: 76%;
   margin-bottom: 2%;
-}
+} */
 
-.second-paragraph {
+/* .second-paragraph {
   text-align: center;
   font-size: 37.5%;
   line-height: 1;
   margin-top: 0;
   margin-bottom: 0;
-}
-.odds {
+} */
+/* .odds {
   font-size: 323%;
   margin-bottom: 5.6%;
-}
-.hero-button {
+} */
+/* .hero-button {
   display: block;
   cursor: pointer;
   border: none;
@@ -125,14 +126,14 @@ a {
   margin: 0 auto;
 
   padding: 7.2% 0% 6.2% 0%;
-}
+} */
 
-.hero-button:hover,
+/* .hero-button:hover,
 .hero-button:focus {
   background: linear-gradient(34deg, rgba(255, 188, 17, 1) 36%, #9241b0 108%);
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-}
+} */
 
 /* --- Mobile --- */
 
@@ -200,32 +201,32 @@ a {
       font-size: 60px;
     }
   }
-
+  /* 
   .main-text {
     width: 100%;
     left: 0;
     top: 10%;
 
     text-align: center;
-  }
+  } */
 
-  .first-paragraph {
+  /* .first-paragraph {
     font-size: 71%;
-  }
+  } */
 
-  .second-paragraph {
+  /* .second-paragraph {
     margin-bottom: 2.2%;
-  }
+  } */
 
-  .odds {
+  /* .odds {
     font-size: 306%;
-  }
+  } */
 
-  .hero-button {
+  /* .hero-button {
     width: 89.5%;
     margin: 0 auto;
     font-size: 71.1%;
-  }
+  } */
 
   .rights {
     display: none;

@@ -26,6 +26,7 @@ document.getElementById('spinButton').addEventListener('click', () => {
   }, 4000);
 
   setTimeout(() => {
+    document.getElementById('slotWindow').style.display = 'none';
     document.getElementById('winModal').classList.add('active');
     spinButton.disabled = false;
   }, 5000);

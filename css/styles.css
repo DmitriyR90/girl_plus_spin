@@ -72,17 +72,87 @@ a {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   color: #070145;
 }
-/* .main-text {
-  position: absolute;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 400;
-  line-height: 0.85;
-  color: var(--white-color);
 
-  top: 23.1%;
-  left: 4%;
-} */
+/* ------- slots part* -------*/
+
+.slot-window {
+  position: absolute;
+  top: 220px;
+  left: 218px;
+
+  padding: 27px 79px;
+
+  width: 872px;
+  /* height: 706px; */
+  aspect-ratio: 1.235;
+  border: 5px solid red;
+
+  text-align: center;
+  /* gap: 15px; */
+}
+
+.slots-wrap {
+  display: flex;
+  justify-content: space-evenly;
+}
+.column {
+  border: 1px solid blue;
+
+  width: 230px;
+  height: 538.72px;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.spinner {
+  position: absolute;
+  top: 0;
+}
+
+.slot-item {
+  width: 227.731px;
+  height: 168.323px;
+  /* aspect-ratio: 1.352; */
+
+  margin-bottom: 17.3px;
+
+  border-radius: 28.676px;
+  border: 1.5px solid #530044;
+  background: linear-gradient(175deg, #a941c3 0.07%, #3f0054 95.79%);
+  box-shadow: 1.1px 28.604px 36.085px 0px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(12.211666107177734px);
+}
+.slot-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.slot-win {
+  background: linear-gradient(180deg, #ffff0a 0%, #ff6200 161.82%),
+    linear-gradient(175deg, #70ff8f 0.07%, #2ec500 95.79%);
+}
+
+.spin-btn {
+  cursor: pointer;
+  color: #070145;
+  text-align: center;
+  font-size: 60.311px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 85%; /* 51.264px */
+  text-transform: uppercase;
+
+  padding: 15px 172px 6px 172px;
+  border-radius: 672px;
+}
+
+.spin-btn:hover,
+.spin-btn:focus {
+  background: linear-gradient(34deg, rgba(255, 188, 17, 1) 36%, #9241b0 108%);
+}
 
 .rights {
   font-family: 'Montserrat';
@@ -96,6 +166,23 @@ a {
 
   top: 94%;
   left: 16%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.modal.active {
+  display: block;
 }
 
 /* .first-paragraph {

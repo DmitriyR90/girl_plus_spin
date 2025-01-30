@@ -77,18 +77,7 @@ a {
 
 .slot-window {
   position: absolute;
-  top: 220px;
-  left: 218px;
-
-  padding: 27px 79px;
-
-  width: 872px;
-  /* height: 706px; */
-  aspect-ratio: 1.235;
-  border: 5px solid red;
-
   text-align: center;
-  /* gap: 15px; */
 }
 
 .slots-wrap {
@@ -97,9 +86,6 @@ a {
 }
 .column {
   border: 1px solid blue;
-
-  width: 230px;
-  height: 538.72px;
 
   overflow: hidden;
   position: relative;
@@ -111,12 +97,6 @@ a {
 }
 
 .slot-item {
-  width: 227.731px;
-  height: 168.323px;
-  /* aspect-ratio: 1.352; */
-
-  margin-bottom: 17.3px;
-
   border-radius: 28.676px;
   border: 1.5px solid #530044;
   background: linear-gradient(175deg, #a941c3 0.07%, #3f0054 95.79%);
@@ -139,14 +119,12 @@ a {
   cursor: pointer;
   color: #070145;
   text-align: center;
-  font-size: 60.311px;
   font-style: normal;
   font-weight: 400;
   line-height: 85%; /* 51.264px */
   text-transform: uppercase;
 
-  padding: 15px 172px 6px 172px;
-  border-radius: 672px;
+  border-radius: 672px; /*672px*/
 }
 
 .spin-btn:hover,
@@ -166,6 +144,39 @@ a {
 
   top: 94%;
   left: 16%;
+}
+
+@media screen and (max-width: 480px) {
+}
+@media screen and (min-width: 481px) {
+  .slot-window {
+    top: 20.37%; /* 220px */
+    left: 11.354%; /* 218px */
+
+    padding: 1.41% 4.114%; /* 27px 79px*/
+
+    width: 45.417%; /*872px*/
+    aspect-ratio: 1.235;
+    border: 5px solid red;
+  }
+  .column {
+    width: 100%; /*230px*/
+    aspect-ratio: 230/538.72;
+    /* height: 1000%; */
+    /*538.72px*/
+  }
+  .slot-item {
+    width: 11.86vw; /*227.731px*/
+    /* height: 168.323px; */
+    aspect-ratio: 227.731/168.323;
+
+    margin-bottom: 7.54%; /*17.3px*/
+  }
+
+  .spin-btn {
+    font-size: 0.60311em; /*60.311px*/
+    padding: 0.248em 2.85188em 0.09948em 2.85188em; /*15px 172px 6px 172px*/
+  }
 }
 
 /* ------- modal window ------- */
@@ -215,6 +226,7 @@ a {
 }
 
 .modal-button {
+  cursor: pointer;
   display: block;
   font-size: 45px;
 
@@ -223,43 +235,10 @@ a {
   border-radius: 675.38px;
 }
 
-/* .first-paragraph {
-  font-size: 76%;
-  margin-bottom: 2%;
-} */
-
-/* .second-paragraph {
-  text-align: center;
-  font-size: 37.5%;
-  line-height: 1;
-  margin-top: 0;
-  margin-bottom: 0;
-} */
-/* .odds {
-  font-size: 323%;
-  margin-bottom: 5.6%;
-} */
-/* .hero-button {
-  display: block;
-  cursor: pointer;
-  border: none;
-
-  text-decoration: none;
-  font-size: 50%;
-  border-radius: 500px;
-  width: 64%;
-  margin: 0 auto;
-
-  padding: 7.2% 0% 6.2% 0%;
-} */
-
-/* .hero-button:hover,
-.hero-button:focus {
-  background: linear-gradient(34deg, rgba(255, 188, 17, 1) 36%, #9241b0 108%);
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-} */
-
+@media screen and (max-width: 480px) {
+}
+@media screen and (min-width: 481px) {
+}
 /* --- Mobile --- */
 
 @media screen and (max-width: 480px) {
